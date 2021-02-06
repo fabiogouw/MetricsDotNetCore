@@ -40,7 +40,7 @@ namespace MetricsDotNetCore
                 {
                     Console.WriteLine(ex.ToString());
                 }
-            }, null, TimeSpan.FromSeconds(1), TimeSpan.FromMilliseconds(new Random().Next(100, 1000)));
+            }, null, TimeSpan.FromMilliseconds(100), TimeSpan.FromMilliseconds(new Random().Next(100, 1000)));
             return Task.CompletedTask;
         }
 

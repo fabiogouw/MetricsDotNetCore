@@ -15,7 +15,7 @@ namespace MetricsDotNetCore
         public static IHostBuilder CreateHostBuilder(string[] args)
         {
             IHostBuilder host = Host.CreateDefaultBuilder(args)
-                .ConfigureMetrics()
+                .AddMetrics()
                 .ConfigureServices((_, services) => services.AddHostedService<SampleMetricGenerator>())
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
